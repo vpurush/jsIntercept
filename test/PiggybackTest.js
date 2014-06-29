@@ -12,7 +12,7 @@
 
             piggybackMethod = mockFunction();
             when(piggybackMethod)(anything()).then(function(numerator, denominator, output) {
-                console.log("numerator ", numerator, "denominator ", denominator, "ouput ", output);
+                console.log("numerator ", numerator, "denominator ", denominator, "output ", output);
             });
             division = division.piggyback(piggybackMethod);
 
